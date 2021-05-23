@@ -578,3 +578,48 @@ footer .content .box ul li a:hover {
     flex: 1 1 18rem;
   }
 }
+@media (max-width: 425px) {
+  .nav-bar .link a i {
+    display: none;
+  }
+  .nav-bar ul li a {
+    font-size: 1rem;
+    color: var(--darkBlue);
+    padding: 10px 5px;
+    border-radius: 3px;
+  }
+  .content .showcase {
+    display: inline;
+    text-align: center;
+  }
+  .showcase img {
+    flex: 0;
+    padding: 10px;
+    margin-left: 150px;
+  }
+  .baner {
+    flex-flow: column;
+  }
+  .baner .cart {
+    margin: 10px 0;
+  }
+  .subscribe form {
+    justify-content: center;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  footer .content {
+    flex-flow: column;
+  }
+  footer .content .box {
+    margin-bottom: 10px;
+  }
+  .footer-bar {
+    width: 100%;
+  }
+  .footer-bar h3 {
+    font-size: 0.9rem;
+  }
+}
