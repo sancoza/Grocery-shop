@@ -237,9 +237,11 @@ header img {
   gap: 1.2rem;
 }
 .products-box .cart {
+  position: relative;
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 10px 20px;
   flex: 1 1 15rem;
+  overflow: hidden;
 }
 .products-box .cart img {
   width: 100%;
@@ -290,6 +292,30 @@ header img {
   padding: 10px;
   margin: 2px;
   width: 35%;
+}
+.products .cart .icons {
+  position: absolute;
+  top: 0.5;
+  right: -50px;
+}
+.products .cart:hover .icons {
+  right: 1rem;
+}
+
+.products .cart .icons a {
+  display: block;
+  font-size: 1.2rem;
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  color: var(--darkBlue);
+  background: var(--grey);
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.products .cart .icons a:hover {
+  color: #fff;
+  background: var(--green);
 }
 /* deal */
 .deal {
@@ -624,7 +650,7 @@ footer .content .box ul li a:hover {
     font-size: 0.9rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 375px) {
   .nav-bar ul li a {
     font-size: 1rem;
 
