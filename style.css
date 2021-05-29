@@ -624,3 +624,22 @@ footer .content .box ul li a:hover {
     font-size: 0.9rem;
   }
 }
+@media (max-width: 425px) {
+  .nav-bar ul li a {
+    font-size: 1rem;
+
+    padding: 5px 5px;
+  }
+  .nav-bar ul li {
+    margin-right: 2px;
+  }
+  .showcase img {
+    flex: 0;
+    padding: 10px;
+    margin-left: 130px;
+  }
+  .bar {
+    display: flex;
+    flex-direction: column;
+  }
+}
